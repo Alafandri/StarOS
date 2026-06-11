@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebOS Desktop</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    
+
+    <div id="top" class="top-bar">
+        <p id="welcomeopen" class="os-title">StarOS🌠</p>
+        <p id="timeElement" class="time-display">Time</p>
+    </div>
+
+    <div id="desktopApps">
+        <div id="notesIcon" class="app-icon" data-window="notes">
+            <img src="./notes.png" alt="Notes Icon">
+            <p>Notes.dust</p>
+        </div>
+        
+        <div id="photoIcon" class="app-icon" data-window="photo">
+            <img src="./gallery.png" alt="Photo Icon">
+            <p>Gallery.dust</p>
+        </div>
+
+        <div id="sudokuicon" class="app-icon" data-window="sudoku">
+            <img src="./sudoku.png" alt="Sudoku Icon">
+            <p>Sudoku.dust</p>
+        </div>
+    </div>
+
+    <div class="window" id="welcome" style="top: calc(50% - 90px); left: calc(50% - 180px); display: flex;">
+        <div class="windowheader" id="welcomeheader">
+            <span class="headertext">Welcome.dust</span>
+            <div class="closebutton" id="welcomeclose"></div>
+        </div>
+        <div class="window-content">
+            <h1>StarOS🌠 v0.0.00000000000000000000000000000000001.1</h1>
+            <h3>Welcome everyone to StarOS!</h3>
+            <P>This is StarOS which is the most super duper mega crazy exlucive OS for only the most Super duper mega crazy cool people!!!!!!!</P>
+            <p>So if you are seeing this then that must mean that you are a insanely cool person!!!!</p>
+            <p>Anyways thats it for now! Have fun!</p>
+            <h2>!!!!!!!!!!!!!!!!</h2>
+            <img src="./bannerwork.png" alt="Notes Icon" width="600" height="300">
+        </div>
+    </div>
+
+    <div class="window" id="notes" style="top: calc(50% - 240px); left: calc(50% - 260px); display: none;">
+        <div class="windowheader" id="notesheader">
+            <div class="closebutton" id="notesclose"></div>
+            <p class="headertext">Notes</p>
+            <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
+        </div>
+        <div class="app-container">
+            <div id="sidebar" class="sidebar"></div>
+            <div id="notesDisplay" class="main-content"></div>
+        </div>
+    </div>
+
+    <div class="window" id="photo" style="top: calc(50% - 150px); left: calc(50% - 200px); display: none;">
+        <div class="windowheader" id="photoheader">
+            <div class="closebutton" id="photoclose"></div>
+            <p class="headertext">Photos</p>
+            <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
+        </div>
+        <div style="background-color: #faffbb; margin: 6px; border-radius: 12px; width: 360px; padding: 16px; color: #000;">
+            <h3>Gallery</h3>
+            <p>Nothing here yet!</p>
+        </div>
+    </div>
+
+    <div class="window" id="sudoku" style="top: calc(50% - 240px); left: calc(50% - 210px); display: none;">
+        <div class="windowheader" id="sudokuheader">
+            <div class="closebutton" id="sudokuclose"></div>
+            <p class="headertext">Sudoku</p>
+            <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
+        </div>
+        <div class="sudoku-app-container">
+            <div id="sudokuGrid" class="sudoku-grid"></div>
+            <div class="sudoku-controls">
+                <div class="sudoku-numbers">
+                    <button class="num-btn" data-val="1">1</button>
+                    <button class="num-btn" data-val="2">2</button>
+                    <button class="num-btn" data-val="3">3</button>
+                    <button class="num-btn" data-val="4">4</button>
+                    <button class="num-btn" data-val="5">5</button>
+                    <button class="num-btn" data-val="6">6</button>
+                    <button class="num-btn" data-val="7">7</button>
+                    <button class="num-btn" data-val="8">8</button>
+                    <button class="num-btn" data-val="9">9</button>
+                    <button class="num-btn clear-btn" data-val="0">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
