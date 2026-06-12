@@ -23,10 +23,33 @@ var content = [
         `
     },
     {
-        title: "Test",
-        date: "06/28/2026",
+        title: "^#@%1*",
+        date: "01/31/2000",
         content: `
-            <p contenteditable="true">Test</p>
+            <p contenteditable="true">
+                <blockquote style="background-color: #e4bd90; margin: 16px 0; padding: 16px; border-radius: 16px;">
+                   <span>Devlog <strong>2</strong><br><br>
+                    <img src="" style="width: 96px; border-radius: 16px" /><br><br>
+                    Progress is again very good! The OS is starting to look very nice. Decided to go for more of a dark theme in space with stars if you haven't noticed yet.</span>
+                    <span>But yeah that is it. See you in next devlog(probably the last one)</span>
+                </blockquote>
+              <i>Update: I forgot to wish you a nice day.. so have a nice day! <br>~ Alafandri</i>
+            </p>
+        `
+    },
+    {
+        title: "$%#2*",
+        date: "33/33/3333",
+        content: `
+            <p contenteditable="true">
+                <blockquote style="background-color: #ffa6e1; margin: 16px 0; padding: 16px; border-radius: 16px;">
+                   <span>Devlog <strong>3</strong><br><br>
+                    <img src="" style="width: 96px; border-radius: 16px" /><br><br>
+                    Hello once again! This is probably the last devlog since I'm planning on moving onto new other projects. But this time I added <strong>sudoku!!!</strong> I don't know about you guys but I love sudoku so I decided to add it here. I know it's not the most fancy thing but it is what it is and I am very proud of it.</span>
+                    <span>I'll soon publish StarOS so I cannot wait for that. yayyy!</span>
+                </blockquote>
+              <i>Update: No update.</i>
+            </p>
         `
     }
 ];
